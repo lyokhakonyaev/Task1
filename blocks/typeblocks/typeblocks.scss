@@ -1,0 +1,51 @@
+@import "../../fonts/fonts-templates.scss";
+
+.typeblocks {
+  display: grid;
+  max-width: 470px;
+  grid-template-columns: 1fr 11fr;
+  max-width: 437px;
+}
+.typeblocks__name {
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+.typeblocks__text {
+  margin-left: 31px;
+  color: #1f2041;
+}
+.typeblocks__name_h1 {
+  @extend %textstyle-body;
+  font-size: 23px;
+  margin-bottom: 82px;
+}
+.typeblocks__name_h2 {
+  @extend %textstyle-body;
+  font-size: 18px;
+  margin-bottom: 71.5px;
+}
+.typeblocks__name_h3 {
+  @extend %textstyle-body;
+  font-size: 12px;
+  margin-bottom: 42px;
+}
+.typeblocks__name_body {
+  @extend %textstyle-body;
+}
+.typeblocks__text_h1 {
+  @extend %textstyle-h1;
+  margin-top: -3.5px;
+}
+.typeblocks__text_h2 {
+  @extend %textstyle-h2;
+}
+.typeblocks__text_h3 {
+  @extend %textstyle-h3;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.typeblocks__text_body {
+  @extend %textstyle-body;
+  margin-right: 66px;
+  color: rgba(31, 32, 65, 0.75);
+}

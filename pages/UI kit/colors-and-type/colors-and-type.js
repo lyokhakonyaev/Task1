@@ -1,0 +1,6 @@
+import '../../../fonts/fonts.scss'
+import '../../../blocks/colorblocks/colorblocks.scss'
+import '../../../blocks/typeblocks/typeblocks.scss'
+import '../../../blocks/logo/logo.scss'
+import '../../../blocks/logo/logo.js'
+import './colors-and-type.scss'

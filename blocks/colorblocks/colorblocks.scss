@@ -1,0 +1,48 @@
+@import "../../fonts/fonts-templates.scss";
+
+.colorblocks {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.colorblocks__example {
+  box-sizing: border-box;
+  height: 70px;
+  width: 70px;
+  border-radius: 6px;
+}
+.colorblocks__example_DarkShadeS100 {
+  background: #1f2041;
+}
+.colorblocks__example_DarkShadeS75 {
+  background: rgba(31, 32, 65, 0.75);
+}
+.colorblocks__example_DarkShadeS50 {
+  background: rgba(31, 32, 65, 0.5);
+}
+.colorblocks__example_DarkShadeS25 {
+  background: rgba(31, 32, 65, 0.25);
+}
+.colorblocks__example_DarkShadeS5 {
+  background: rgba(31, 32, 65, 0.05);
+}
+.colorblocks__example_Purple {
+  background: #bc9cff;
+}
+.colorblocks__example_Green {
+  background: #6fcf97;
+}
+
+.colorblocks__text {
+    margin-left: 40px;
+    margin-top: 11px;
+}
+.colorblocks__name {
+    @extend %textstyle-h2;
+    margin-bottom: 3px;
+}
+.colorblocks__code {
+  @extend %textstyle-h2;
+  font-size: 19px;
+  font-weight: normal;
+}

@@ -1,0 +1,17 @@
+style
+  include colorblocks.scss
+
+mixin colorblocks(classname, name, code)
+  div.colorblocks
+    div(class=['colorblocks__example', 'colorblocks__example_' + classname])
+    div.colorblocks__text
+      h2.colorblocks__name=name
+      p.colorblocks__code=code
+      
++colorblocks('DarkShadeS100', 'Dark Shade 100%', '#1F2041')
++colorblocks('DarkShadeS75', 'Dark Shade 75%', '#1F2041')
++colorblocks('DarkShadeS50', 'Dark Shade 50%', '#1F2041')
++colorblocks('DarkShadeS25', 'Dark Shade 25%', '#1F2041')
++colorblocks('DarkShadeS5', 'Dark Shade 5%', '#1F2041')
++colorblocks('Purple', 'Purple', '#BC9CFF')
++colorblocks('Green', 'Green', '#6FCF97')

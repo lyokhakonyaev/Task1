@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset=utf-8)
+    meta(name="viewport" content="width=device-width")
+  body
+    .form-elements
+      .form-elements__top-container
+        .form-elements__left-container
+          .text-field
+            include ../../../blocks/textfield/textfield.pug
+            p.text-field__title text field
+            p.text-field__type default
+            +textfield('', 'Email')
+      .form-elements__middle-container
+      .form-elements__bottom-container

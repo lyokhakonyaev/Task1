@@ -1,0 +1,41 @@
+html {
+  font-size: 14px;
+}
+@function calc-font-size($value) {
+  @return ($value/14) * 1rem;
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: calc(
+      14px * 0.8 + (14 - 14 * 0.8) * (100vw - 320px) / (1440 - 320)
+    );
+  }
+}
+%textstyle-h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc-font-size(24);
+  line-height: calc-font-size(30);
+}
+%textstyle-h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc-font-size(19);
+  line-height: calc-font-size(24);
+}
+%textstyle-h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc-font-size(12);
+  line-height: calc-font-size(15);
+}
+%textstyle-body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc-font-size(14);
+  line-height: calc-font-size(24);
+}
