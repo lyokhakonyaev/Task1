@@ -10,7 +10,7 @@ console.log('IS PROD:', isProd)
 
 const PATHS = {
     colorsandtype: path.join(__dirname, '/pages/UI kit/colors-and-type'),
-    formelements: path.join(__dirname, '/pages/UI kit/FormElements'),
+    formelements: path.join(__dirname, '/pages/UI kit/form-elements'),
     dist: path.join(__dirname, '/dist'),
 }
 
@@ -34,7 +34,7 @@ module.exports = {
     mode: 'development',
     entry: {
         'colorsandtype': PATHS.colorsandtype + '/colors-and-type.js',
-        'formelements': PATHS.formelements + '/FormElements.js'
+        'formelements': PATHS.formelements + '/form-elements.js'
     },
     output: {
         filename: '[name].js',
@@ -50,7 +50,7 @@ module.exports = {
         hot: isDev,
         open: true,
         contentBase: PATHS.dist,
-        index: 'colors-and-type.html'
+        index: 'form-elements.html'
     },
     plugins: [
         new HTMLWebpackPlugin({
@@ -59,8 +59,8 @@ module.exports = {
 
         }),
         new HTMLWebpackPlugin({
-            template: PATHS.formelements + '/FormElements.pug',
-            filename: 'FormElements.html'
+            template: PATHS.formelements + '/form-elements.pug',
+            filename: 'form-elements.html'
 
         }),
         new CleanWebpackPlugin(),

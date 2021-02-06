@@ -4,12 +4,11 @@ html
     meta(charset=utf-8)
     meta(name="viewport" content="width=device-width")
   body
-    div.colors-and-type__body
-      div.colors-and-type__logo
-          include ../../../blocks/logo/logo.pug
-      div.colors-and-type__content
-        div.colors-and-type__colorblocks
+    .colors-and-type
+      .colors-and-type__logo
+        include ../../../blocks/logo/logo.pug
+      .colors-and-type__content
+        .colors-and-type__colorblocks
           include ../../../blocks/colorblocks/colorblocks.pug
-        div.colors-and-type__typeblocks
+        .colors-and-type__typeblocks
           include ../../../blocks/typeblocks/typeblocks.pug
-        

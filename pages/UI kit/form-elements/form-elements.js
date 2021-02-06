@@ -1,3 +1,3 @@
 import '../../../fonts/fonts.scss'
-import './FormElements.scss'
+import './form-elements.scss'
 import '../../../blocks/textfield/textfield.scss'
