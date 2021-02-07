@@ -7,10 +7,15 @@ html
     .form-elements
       .form-elements__top-container
         .form-elements__left-container
-          .text-field
+          .form-elements__text-field
             include ../../../blocks/textfield/textfield.pug
-            p.text-field__title text field
-            p.text-field__type default
-            +textfield('', 'Email')
+            p.form-elements__text-field-title text field
+            p.form-elements__text-field-type default
+            +textfield('text', 'Email')(class="default")
+          .form-elements__text-field
+            include ../../../blocks/textfield/textfield.pug
+            p.form-elements__text-field-title text field
+            p.form-elements__text-field-type hover / focus
+            +textfield('text')(class="hover")
       .form-elements__middle-container
       .form-elements__bottom-container

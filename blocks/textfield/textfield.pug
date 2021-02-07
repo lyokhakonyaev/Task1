@@ -1,5 +1,5 @@
 style
   include textfield.scss
-mixin textfield(type,placeholder)
+mixin textfield(type, placeholder)
   .textfield
-    input.textfield__input(type=type, placeholder=placeholder)
+    input.textfield__input(class!=attributes.class, type=type, placeholder=placeholder)

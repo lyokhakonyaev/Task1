@@ -1,0 +1,40 @@
+@import "../../../fonts/fonts-templates.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+.form-elements {
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.form-elements__top-container{
+  margin: 140px 140px;
+}
+.form-elements__left-container {
+  max-width: 320px;
+}
+.form-elements__text-field {
+  display: grid;
+  grid-template-rows: 22px 43px;
+  grid-template-columns: 209px 110px;
+  margin-bottom: 19px;
+}
+.form-elements__text-field-title {
+  @extend %textstyle-h3;
+  line-height: 19px;
+}
+.form-elements__text-field-type {
+  @extend %textstyle-body;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 12px;
+  text-align: right;
+  line-height: 12px;
+}
+.textfield {
+  width: 320px;
+  height: 44px;
+}
