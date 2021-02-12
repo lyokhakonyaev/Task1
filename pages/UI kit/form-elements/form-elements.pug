@@ -11,11 +11,22 @@ html
             include ../../../blocks/textfield/textfield.pug
             p.form-elements__text-field-title text field
             p.form-elements__text-field-type default
-            +textfield('text', 'Email')(class="default")
+            +textfield('email', 'Email')(class="default")
           .form-elements__text-field
             include ../../../blocks/textfield/textfield.pug
             p.form-elements__text-field-title text field
             p.form-elements__text-field-type hover / focus
             +textfield('text')(class="hover")
+          .form-elements__text-field
+            include ../../../blocks/textfield/textfield.pug
+            p.form-elements__text-field-title masked text field 
+            p.form-elements__text-field-type 
+            +textfield('text', 'ДД.ММ.ГГГГ', '00.00.0000')(class="masked")
+          .form-elements__text-field
+            include ../../../blocks/textfield/textfield.pug
+            p.form-elements__text-field-title subscription text field
+            p.form-elements__text-field-type 
+            +textfield('email', 'Email')(class="subscription")
+            +textfield('image', '', '', 'files/arrow_forward.svg', '')(class="button")
       .form-elements__middle-container
       .form-elements__bottom-container

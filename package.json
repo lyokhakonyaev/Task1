@@ -34,6 +34,7 @@
   "dependencies": {
     "copy-webpack-plugin": "^6.2.1",
     "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
     "normalize.css": "^8.0.1",
     "webpack-bundle-analyzer": "^4.3.0"
   }
