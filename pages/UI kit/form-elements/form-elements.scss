@@ -38,3 +38,7 @@
   width: 320px;
   height: 44px;
 }
+.form-elements__checkbox-title{
+  @extend %textstyle-h3;
+  line-height: 19px;
+}

@@ -1,5 +1,5 @@
 import '../../../fonts/fonts.scss'
 import './form-elements.scss'
 import './form-elements.pug'
-import '../../../blocks/textfield/textfield.scss'
 import '../../../blocks/textfield/textfield.js'
+import '../../../blocks/checkbox/checkbox.js'

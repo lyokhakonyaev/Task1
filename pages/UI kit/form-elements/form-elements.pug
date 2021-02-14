@@ -28,5 +28,13 @@ html
             p.form-elements__text-field-type 
             +textfield('email', 'Email')(class="subscription")
             +textfield('image', '', '', 'files/arrow_forward.svg', '')(class="button")
+          .form-elements__checkbox
+            include ../../../blocks/checkbox/checkbox.pug
+            .form-elements__checkbox-title checkbox buttons
+            .form-elements__checkbox-container
+              +checkbox('checkbox', 'Можно курить')
+              +checkbox('checkbox','Можно с питомцами')
+              +checkbox('checkbox','Можно пригласить гостей (до 10 человек)')
+              
       .form-elements__middle-container
       .form-elements__bottom-container

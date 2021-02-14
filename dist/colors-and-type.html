@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="null">
+    <meta name="viewport" content="width=device-width">
+  <link href="colorsandtype.css" rel="stylesheet"><link href="formelements.css" rel="stylesheet"></head>
+  <body>
+    <div class="colors-and-type">
+      <div class="colors-and-type__logo">
+<style>.logo-border {
+  border: 2.6px solid rgba(31, 32, 65, 0.25);
+  border-radius: 51%;
+  position: relative;
+  height: 41px;
+  width: 41px;
+}
+.left-wing {
+  position: absolute;
+  bottom: 19%;
+  right: 43%;
+}
+.right-wing {
+  position: absolute;
+  bottom: 35%;
+  right: 16%;
+}
+
+</style>
+<div class="logo-border">
+  <div class="left-wing"><img class="left-wing__image" src="files/left-wing.svg"></div>
+  <div class="right-wing"><img class="right-wing__image" src="files/right-wing.svg"></div>
+</div>
+      </div>
+      <div class="colors-and-type__content">
+        <div class="colors-and-type__colorblocks">
+          <style>@import "../../fonts/fonts-templates.scss";
+
+.colorblocks {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.colorblocks__example {
+  box-sizing: border-box;
+  height: 70px;
+  width: 70px;
+  border-radius: 6px;
+}
+
+.DarkShadeS100 {
+  background: #1f2041;
+}
+.DarkShadeS75 {
+  background: rgba(31, 32, 65, 0.75);
+}
+.DarkShadeS50 {
+  background: rgba(31, 32, 65, 0.5);
+}
+.DarkShadeS25 {
+  background: rgba(31, 32, 65, 0.25);
+}
+.DarkShadeS5 {
+  background: rgba(31, 32, 65, 0.05);
+}
+.Purple {
+  background: #bc9cff;
+}
+.Green {
+  background: #6fcf97;
+}
+
+.colorblocks__text {
+    margin-left: 40px;
+    margin-top: 11px;
+}
+.colorblocks__name {
+    @extend %textstyle-h2;
+    margin-bottom: 3px;
+}
+.colorblocks__code {
+  @extend %textstyle-h2;
+  font-size: 19px;
+  font-weight: normal;
+}
+          </style>
+                    <div class="colorblocks">
+                      <div class="colorblocks__example DarkShadeS100"></div>
+                      <div class="colorblocks__text">
+                        <h2 class="colorblocks__name">Dark Shade 100%</h2>
+                        <p class="colorblocks__code">#1F2041</p>
+                      </div>
+                    </div>
+                    <div class="colorblocks">
+                      <div class="colorblocks__example DarkShadeS75"></div>
+                      <div class="colorblocks__text">
+                        <h2 class="colorblocks__name">Dark Shade 75%</h2>
+                        <p class="colorblocks__code">#1F2041</p>
+                      </div>
+                    </div>
+                    <div class="colorblocks">
+                      <div class="colorblocks__example DarkShadeS50"></div>
+                      <div class="colorblocks__text">
+                        <h2 class="colorblocks__name">Dark Shade 50%</h2>
+                        <p class="colorblocks__code">#1F2041</p>
+                      </div>
+                    </div>
+                    <div class="colorblocks">
+                      <div class="colorblocks__example DarkShadeS25"></div>
+                      <div class="colorblocks__text">
+                        <h2 class="colorblocks__name">Dark Shade 25%</h2>
+                        <p class="colorblocks__code">#1F2041</p>
+                      </div>
+                    </div>
+                    <div class="colorblocks">
+                      <div class="colorblocks__example DarkShadeS5"></div>
+                      <div class="colorblocks__text">
+                        <h2 class="colorblocks__name">Dark Shade 5%</h2>
+                        <p class="colorblocks__code">#1F2041</p>
+                      </div>
+                    </div>
+                    <div class="colorblocks">
+                      <div class="colorblocks__example Purple"></div>
+                      <div class="colorblocks__text">
+                        <h2 class="colorblocks__name">Purple</h2>
+                        <p class="colorblocks__code">#BC9CFF</p>
+                      </div>
+                    </div>
+                    <div class="colorblocks">
+                      <div class="colorblocks__example Green"></div>
+                      <div class="colorblocks__text">
+                        <h2 class="colorblocks__name">Green</h2>
+                        <p class="colorblocks__code">#6FCF97</p>
+                      </div>
+                    </div>
+        </div>
+        <div class="colors-and-type__typeblocks">
+          <style>@import "../../fonts/fonts-templates.scss";
+
+.typeblocks {
+  display: grid;
+  max-width: 470px;
+  grid-template-columns: 1fr 11fr;
+  max-width: 437px;
+}
+.typeblocks__name {
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+.typeblocks__text {
+  margin-left: 31px;
+  color: #1f2041;
+}
+.typeblocks__name_h1 {
+  @extend %textstyle-body;
+  font-size: 23px;
+  margin-bottom: 82px;
+}
+.typeblocks__name_h2 {
+  @extend %textstyle-body;
+  font-size: 18px;
+  margin-bottom: 71.5px;
+}
+.typeblocks__name_h3 {
+  @extend %textstyle-body;
+  font-size: 12px;
+  margin-bottom: 42px;
+}
+.typeblocks__name_body {
+  @extend %textstyle-body;
+}
+.typeblocks__text_h1 {
+  @extend %textstyle-h1;
+  margin-top: -3.5px;
+}
+.typeblocks__text_h2 {
+  @extend %textstyle-h2;
+}
+.typeblocks__text_h3 {
+  @extend %textstyle-h3;
+  line-height: 22px;
+}
+.typeblocks__text_body {
+  @extend %textstyle-body;
+  margin-right: 66px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+          </style>
+                    <div class="typeblocks">
+                      <div class="typeblocks__name typeblocks__name_h1">H1</div>
+                      <div class="typeblocks__text typeblocks__text_h1">This one is the sub-section or widget title</div>
+                    </div>
+                    <div class="typeblocks">
+                      <div class="typeblocks__name typeblocks__name_h2">H2</div>
+                      <div class="typeblocks__text typeblocks__text_h2">Next one is the item title inside widgets</div>
+                    </div>
+                    <div class="typeblocks">
+                      <div class="typeblocks__name typeblocks__name_h3">H3</div>
+                      <div class="typeblocks__text typeblocks__text_h3">This is a label or CTA text</div>
+                    </div>
+                    <div class="typeblocks">
+                      <div class="typeblocks__name typeblocks__name_body">Body</div>
+                      <div class="typeblocks__text typeblocks__text_body">This is the body text which is used for most of the design, like paragraphs, lists, etc.</div>
+                    </div>
+        </div>
+      </div>
+    </div>
+  <script src="colorsandtype.js"></script><script src="vendors-node_modules_jquery-mask-plugin_dist_jquery_mask_min_js-node_modules_pug-runtime_index_js.js"></script><script src="formelements.js"></script></body>
+</html>
