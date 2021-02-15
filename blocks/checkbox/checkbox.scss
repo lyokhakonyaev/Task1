@@ -3,16 +3,20 @@
 .checkbox__span {
   @extend %textstyle-body;
   color: rgba(31, 32, 65, 0.5);
+  line-height: 19px;
 }
 .checkbox__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
+  width: 20px;
+  height: 20px;
 }
 .checkbox__label > span {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   user-select: none;
+  cursor: pointer;
 }
 .checkbox__label > span::before {
   content: "";
@@ -21,13 +25,14 @@
   height: 20px;
   flex-shrink: 0;
   flex-grow: 0;
-  margin-right: 0.5em;
+  margin-right: 9px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1.5px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-right: 2px;
 }
 .checkbox__label > input:checked + span::before {
   border-color: #bc9cff;

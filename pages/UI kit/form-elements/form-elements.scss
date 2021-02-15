@@ -41,4 +41,9 @@
 .form-elements__checkbox-title{
   @extend %textstyle-h3;
   line-height: 19px;
+  margin-bottom: 15px;
+}
+.checkbox {
+  max-width: 235px;
+  margin-bottom: 0.46rem;
 }

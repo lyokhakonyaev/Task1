@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./blocks/colorblocks/colorblocks.js":
+/*!*******************************************!*\
+  !*** ./blocks/colorblocks/colorblocks.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _colorblocks_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colorblocks.scss */ \"./blocks/colorblocks/colorblocks.scss\");\n\n\n//# sourceURL=webpack://task1/./blocks/colorblocks/colorblocks.js?");
+
+/***/ }),
+
 /***/ "./blocks/logo/logo.js":
 /*!*****************************!*\
   !*** ./blocks/logo/logo.js ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _left_wing_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./left-wing.svg */ \"./blocks/logo/left-wing.svg\");\n/* harmony import */ var _right_wing_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./right-wing.svg */ \"./blocks/logo/right-wing.svg\");\n\r\n\n\n//# sourceURL=webpack://task1/./blocks/logo/logo.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _left_wing_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./left-wing.svg */ \"./blocks/logo/left-wing.svg\");\n/* harmony import */ var _right_wing_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./right-wing.svg */ \"./blocks/logo/right-wing.svg\");\n/* harmony import */ var _logo_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./logo.scss */ \"./blocks/logo/logo.scss\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task1/./blocks/logo/logo.js?");
+
+/***/ }),
+
+/***/ "./blocks/typeblocks/typeblocks.js":
+/*!*****************************************!*\
+  !*** ./blocks/typeblocks/typeblocks.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _typeblocks_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeblocks.scss */ \"./blocks/typeblocks/typeblocks.scss\");\n\n\n//# sourceURL=webpack://task1/./blocks/typeblocks/typeblocks.js?");
 
 /***/ }),
 
@@ -96,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _blocks_colorblocks_colorblocks_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../blocks/colorblocks/colorblocks.scss */ \"./blocks/colorblocks/colorblocks.scss\");\n/* harmony import */ var _blocks_typeblocks_typeblocks_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../blocks/typeblocks/typeblocks.scss */ \"./blocks/typeblocks/typeblocks.scss\");\n/* harmony import */ var _blocks_logo_logo_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../blocks/logo/logo.scss */ \"./blocks/logo/logo.scss\");\n/* harmony import */ var _blocks_logo_logo_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../blocks/logo/logo.js */ \"./blocks/logo/logo.js\");\n/* harmony import */ var _colors_and_type_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./colors-and-type.scss */ \"./pages/UI kit/colors-and-type/colors-and-type.scss\");\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task1/./pages/UI_kit/colors-and-type/colors-and-type.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _blocks_colorblocks_colorblocks_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../blocks/colorblocks/colorblocks.js */ \"./blocks/colorblocks/colorblocks.js\");\n/* harmony import */ var _blocks_typeblocks_typeblocks_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../blocks/typeblocks/typeblocks.js */ \"./blocks/typeblocks/typeblocks.js\");\n/* harmony import */ var _blocks_logo_logo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../blocks/logo/logo.js */ \"./blocks/logo/logo.js\");\n/* harmony import */ var _colors_and_type_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./colors-and-type.scss */ \"./pages/UI kit/colors-and-type/colors-and-type.scss\");\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task1/./pages/UI_kit/colors-and-type/colors-and-type.js?");
 
 /***/ })
 
