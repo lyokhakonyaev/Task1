@@ -1,1 +1,0 @@
-import './colorblocks.scss'

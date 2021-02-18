@@ -1,5 +1,5 @@
 import '../../../fonts/fonts.scss'
-import '../../../blocks/colorblocks/colorblocks.js'
-import '../../../blocks/typeblocks/typeblocks.js'
+import '../../../blocks/color-blocks/color-blocks.js'
+import '../../../blocks/type-blocks/type-blocks.js'
 import '../../../blocks/logo/logo.js'
 import './colors-and-type.scss'

@@ -1,11 +1,11 @@
 @import "../../fonts/fonts-templates.scss";
 
-.colorblocks {
+.color-blocks {
   display: flex;
   margin-bottom: 20px;
 }
 
-.colorblocks__example {
+.color-blocks__example {
   box-sizing: border-box;
   height: 70px;
   width: 70px;
@@ -34,15 +34,15 @@
   background: #6fcf97;
 }
 
-.colorblocks__text {
+.color-blocks__text {
     margin-left: 40px;
     margin-top: 11px;
 }
-.colorblocks__name {
+.color-blocks__name {
     @extend %textstyle-h2;
     margin-bottom: 3px;
 }
-.colorblocks__code {
+.color-blocks__code {
   @extend %textstyle-h2;
   font-size: 19px;
   font-weight: normal;

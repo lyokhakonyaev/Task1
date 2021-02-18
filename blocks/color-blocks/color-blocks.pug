@@ -1,0 +1,14 @@
+mixin color-blocks(name, code)
+  .color-blocks
+    .color-blocks__example(class!=attributes.class)
+    .color-blocks__text
+      h2.color-blocks__name=name
+      p.color-blocks__code=code
+      
++color-blocks('Dark Shade 100%', '#1F2041')(class="DarkShadeS100")
++color-blocks('Dark Shade 75%', '#1F2041')(class="DarkShadeS75")
++color-blocks('Dark Shade 50%', '#1F2041')(class="DarkShadeS50")
++color-blocks('Dark Shade 25%', '#1F2041')(class="DarkShadeS25")
++color-blocks('Dark Shade 5%', '#1F2041')(class="DarkShadeS5")
++color-blocks('Purple', '#BC9CFF')(class="Purple")
++color-blocks('Green', '#6FCF97')(class="Green")

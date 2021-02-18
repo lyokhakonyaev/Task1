@@ -33,7 +33,7 @@ html {
   html {
     font-size: calc( 14px * 0.8 + (14 - 14 * 0.8) * (100vw - 320px) / (1440 - 320)); } }
 
-.form-elements__text-field-title, .form-elements__checkbox-title {
+.form-elements__text-field-title, .form-elements__check-box-title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -81,12 +81,17 @@ html {
   text-align: right;
   line-height: 12px; }
 
-.textfield {
+.text-field {
   width: 320px;
   height: 44px; }
 
-.form-elements__checkbox-title {
-  line-height: 19px; }
+.form-elements__check-box-title {
+  line-height: 19px;
+  margin-bottom: 15px; }
+
+.check-box {
+  max-width: 235px;
+  margin-bottom: 0.46rem; }
 
 html {
   font-size: 14px; }
@@ -95,14 +100,14 @@ html {
   html {
     font-size: calc( 14px * 0.8 + (14 - 14 * 0.8) * (100vw - 320px) / (1440 - 320)); } }
 
-.textfield__input {
+.text-field__input {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.71429rem; }
 
-.textfield__input {
+.text-field__input {
   box-sizing: border-box;
   width: 320px;
   height: 44px;
@@ -144,42 +149,48 @@ html {
   html {
     font-size: calc( 14px * 0.8 + (14 - 14 * 0.8) * (100vw - 320px) / (1440 - 320)); } }
 
-.checkbox__span {
+.check-box__span {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.71429rem; }
 
-.checkbox__span {
-  color: rgba(31, 32, 65, 0.5); }
+.check-box__span {
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 19px; }
 
-.checkbox__input {
+.check-box__input {
   position: absolute;
   z-index: -1;
-  opacity: 0; }
+  opacity: 0;
+  width: 20px;
+  height: 20px; }
 
-.checkbox__label > span {
+.check-box__label > span {
   display: inline-flex;
-  align-items: center;
-  user-select: none; }
+  align-items: flex-start;
+  user-select: none;
+  cursor: pointer; }
 
-.checkbox__label > span::before {
+.check-box__label > span::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
   flex-grow: 0;
-  margin-right: 0.5em;
+  margin-right: 9px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  border-radius: 4px; }
+  border-radius: 4px;
+  padding-right: 2px; }
 
-.checkbox__label > input:checked + span::before {
+.check-box__label > input:checked + span::before {
   border-color: #bc9cff;
   background-image: url(files/check.svg); }
+
 

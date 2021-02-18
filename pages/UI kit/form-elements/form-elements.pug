@@ -8,33 +8,41 @@ html
       .form-elements__top-container
         .form-elements__left-container
           .form-elements__text-field
-            include ../../../blocks/textfield/textfield.pug
+            include ../../../blocks/text-field/text-field.pug
             p.form-elements__text-field-title text field
             p.form-elements__text-field-type default
-            +textfield('email', 'Email')(class="default")
+            +text-field('email', 'Email')(class="default")
           .form-elements__text-field
-            include ../../../blocks/textfield/textfield.pug
+            include ../../../blocks/text-field/text-field.pug
             p.form-elements__text-field-title text field
             p.form-elements__text-field-type hover / focus
-            +textfield('text')(class="hover")
+            +text-field('text')(class="hover")
           .form-elements__text-field
-            include ../../../blocks/textfield/textfield.pug
+            include ../../../blocks/text-field/text-field.pug
             p.form-elements__text-field-title masked text field 
             p.form-elements__text-field-type 
-            +textfield('text', 'ДД.ММ.ГГГГ', '00.00.0000')(class="masked")
+            +text-field('text', 'ДД.ММ.ГГГГ', '00.00.0000')(class="masked")
           .form-elements__text-field
-            include ../../../blocks/textfield/textfield.pug
+            include ../../../blocks/text-field/text-field.pug
             p.form-elements__text-field-title subscription text field
             p.form-elements__text-field-type 
-            +textfield('email', 'Email')(class="subscription")
-            +textfield('image', '', '', 'files/arrow_forward.svg', '')(class="button")
-          .form-elements__checkbox
-            include ../../../blocks/checkbox/checkbox.pug
-            .form-elements__checkbox-title checkbox buttons
-            .form-elements__checkbox-container
-              +checkbox('checkbox', 'Можно курить')
-              +checkbox('checkbox','Можно с питомцами')
-              +checkbox('checkbox','Можно пригласить гостей (до 10 человек)')
-              
+            +text-field('email', 'Email')(class="subscription")
+            +text-field('image', '', '', 'files/arrow_forward.svg', '')(class="button")
+          .form-elements__check-box
+            include ../../../blocks/check-box/check-box.pug
+            .form-elements__check-box-title checkbox buttons
+            .form-elements__check-box-container
+              +check-box('checkbox', 'Можно курить')
+              +check-box('checkbox','Можно с питомцами')
+              +check-box('checkbox','Можно пригласить гостей (до 10 человек)')
+          .form-elements__radio-buttons
+            include ../../../blocks/radio-buttons/radio-buttons.pug
+            .form-elements__radio-buttons-title radio buttons
+            .form-elements__radio-buttons-container
+              +radio-buttons('radio', 'sex', 'male', 'Мужчина')
+              +radio-buttons('radio', 'sex', 'female', 'Женщина')
+
+
+
       .form-elements__middle-container
       .form-elements__bottom-container

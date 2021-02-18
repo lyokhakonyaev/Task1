@@ -1,24 +1,24 @@
 @import "../../fonts/fonts-templates.scss";
 
-.checkbox__span {
+.check-box__span {
   @extend %textstyle-body;
   color: rgba(31, 32, 65, 0.5);
   line-height: 19px;
 }
-.checkbox__input {
+.check-box__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
   width: 20px;
   height: 20px;
 }
-.checkbox__label > span {
+.check-box__label > span {
   display: inline-flex;
   align-items: flex-start;
   user-select: none;
   cursor: pointer;
 }
-.checkbox__label > span::before {
+.check-box__label > span::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -29,12 +29,12 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
-  border: 1.5px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
   padding-right: 2px;
 }
-.checkbox__label > input:checked + span::before {
+.check-box__label > input:checked + span::before {
   border-color: #bc9cff;
   background-image: url("check.svg");
 }

@@ -1,3 +1,3 @@
 import { compileClientWithDependenciesTracked } from "pug";
 
-import './checkbox.scss'
+import './check-box.scss'

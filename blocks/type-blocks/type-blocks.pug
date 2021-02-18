@@ -1,0 +1,9 @@
+mixin type-blocks(classname, classtext, name, text)
+  .type-blocks
+    div(class=['type-blocks__name', 'type-blocks__name_' + classname])=name
+    div(class=['type-blocks__text', 'type-blocks__text_' + classtext])=text
+
++type-blocks('h1', 'h1', 'H1', 'This one is the sub-section or widget title')
++type-blocks('h2', 'h2', 'H2', 'Next one is the item title inside widgets')
++type-blocks('h3', 'h3', 'H3', 'This is a label or CTA text')
++type-blocks('body', 'body', 'Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')

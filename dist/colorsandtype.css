@@ -33,18 +33,18 @@ html {
   html {
     font-size: calc( 14px * 0.8 + (14 - 14 * 0.8) * (100vw - 320px) / (1440 - 320)); } }
 
-.colorblocks__name, .colorblocks__code {
+.color-blocks__name, .color-blocks__code {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 1.35714rem;
   line-height: 1.71429rem; }
 
-.colorblocks {
+.color-blocks {
   display: flex;
   margin-bottom: 20px; }
 
-.colorblocks__example {
+.color-blocks__example {
   box-sizing: border-box;
   height: 70px;
   width: 70px;
@@ -71,14 +71,14 @@ html {
 .Green {
   background: #6fcf97; }
 
-.colorblocks__text {
+.color-blocks__text {
   margin-left: 40px;
   margin-top: 11px; }
 
-.colorblocks__name {
+.color-blocks__name {
   margin-bottom: 3px; }
 
-.colorblocks__code {
+.color-blocks__code {
   font-size: 19px;
   font-weight: normal; }
 
@@ -89,21 +89,21 @@ html {
   html {
     font-size: calc( 14px * 0.8 + (14 - 14 * 0.8) * (100vw - 320px) / (1440 - 320)); } }
 
-.typeblocks__text_h1 {
+.type-blocks__text_h1 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 1.71429rem;
   line-height: 2.14286rem; }
 
-.typeblocks__text_h2 {
+.type-blocks__text_h2 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 1.35714rem;
   line-height: 1.71429rem; }
 
-.typeblocks__text_h3 {
+.type-blocks__text_h3 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -111,46 +111,46 @@ html {
   line-height: 1.07143rem;
   text-transform: uppercase; }
 
-.typeblocks__name_h1, .typeblocks__name_h2, .typeblocks__name_h3, .typeblocks__name_body, .typeblocks__text_body {
+.type-blocks__name_h1, .type-blocks__name_h2, .type-blocks__name_h3, .type-blocks__name_body, .type-blocks__text_body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.71429rem; }
 
-.typeblocks {
+.type-blocks {
   display: grid;
   max-width: 470px;
   grid-template-columns: 1fr 11fr;
   max-width: 437px; }
 
-.typeblocks__name {
+.type-blocks__name {
   text-align: right;
   color: rgba(31, 32, 65, 0.25); }
 
-.typeblocks__text {
+.type-blocks__text {
   margin-left: 31px;
   color: #1f2041; }
 
-.typeblocks__name_h1 {
+.type-blocks__name_h1 {
   font-size: 23px;
   margin-bottom: 82px; }
 
-.typeblocks__name_h2 {
+.type-blocks__name_h2 {
   font-size: 18px;
   margin-bottom: 71.5px; }
 
-.typeblocks__name_h3 {
+.type-blocks__name_h3 {
   font-size: 12px;
   margin-bottom: 42px; }
 
-.typeblocks__text_h1 {
+.type-blocks__text_h1 {
   margin-top: -3.5px; }
 
-.typeblocks__text_h3 {
+.type-blocks__text_h3 {
   line-height: 22px; }
 
-.typeblocks__text_body {
+.type-blocks__text_body {
   margin-right: 66px;
   color: rgba(31, 32, 65, 0.75); }
 

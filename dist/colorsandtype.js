@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./blocks/colorblocks/colorblocks.js":
-/*!*******************************************!*\
-  !*** ./blocks/colorblocks/colorblocks.js ***!
-  \*******************************************/
+/***/ "./blocks/color-blocks/color-blocks.js":
+/*!*********************************************!*\
+  !*** ./blocks/color-blocks/color-blocks.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _colorblocks_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colorblocks.scss */ \"./blocks/colorblocks/colorblocks.scss\");\n\n\n//# sourceURL=webpack://task1/./blocks/colorblocks/colorblocks.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _color_blocks_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./color-blocks.scss */ \"./blocks/color-blocks/color-blocks.scss\");\n\n\n//# sourceURL=webpack://task1/./blocks/color-blocks/color-blocks.js?");
 
 /***/ }),
 
@@ -30,13 +30,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lef
 
 /***/ }),
 
-/***/ "./blocks/typeblocks/typeblocks.js":
-/*!*****************************************!*\
-  !*** ./blocks/typeblocks/typeblocks.js ***!
-  \*****************************************/
+/***/ "./blocks/type-blocks/type-blocks.js":
+/*!*******************************************!*\
+  !*** ./blocks/type-blocks/type-blocks.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _typeblocks_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeblocks.scss */ \"./blocks/typeblocks/typeblocks.scss\");\n\n\n//# sourceURL=webpack://task1/./blocks/typeblocks/typeblocks.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _type_blocks_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./type-blocks.scss */ \"./blocks/type-blocks/type-blocks.scss\");\n\n\n//# sourceURL=webpack://task1/./blocks/type-blocks/type-blocks.js?");
 
 /***/ }),
 
@@ -60,13 +60,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./blocks/colorblocks/colorblocks.scss":
-/*!*********************************************!*\
-  !*** ./blocks/colorblocks/colorblocks.scss ***!
-  \*********************************************/
+/***/ "./blocks/color-blocks/color-blocks.scss":
+/*!***********************************************!*\
+  !*** ./blocks/color-blocks/color-blocks.scss ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task1/./blocks/colorblocks/colorblocks.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task1/./blocks/color-blocks/color-blocks.scss?");
 
 /***/ }),
 
@@ -80,13 +80,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./blocks/typeblocks/typeblocks.scss":
-/*!*******************************************!*\
-  !*** ./blocks/typeblocks/typeblocks.scss ***!
-  \*******************************************/
+/***/ "./blocks/type-blocks/type-blocks.scss":
+/*!*********************************************!*\
+  !*** ./blocks/type-blocks/type-blocks.scss ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task1/./blocks/typeblocks/typeblocks.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task1/./blocks/type-blocks/type-blocks.scss?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _blocks_colorblocks_colorblocks_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../blocks/colorblocks/colorblocks.js */ \"./blocks/colorblocks/colorblocks.js\");\n/* harmony import */ var _blocks_typeblocks_typeblocks_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../blocks/typeblocks/typeblocks.js */ \"./blocks/typeblocks/typeblocks.js\");\n/* harmony import */ var _blocks_logo_logo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../blocks/logo/logo.js */ \"./blocks/logo/logo.js\");\n/* harmony import */ var _colors_and_type_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./colors-and-type.scss */ \"./pages/UI kit/colors-and-type/colors-and-type.scss\");\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task1/./pages/UI_kit/colors-and-type/colors-and-type.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _blocks_color_blocks_color_blocks_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../blocks/color-blocks/color-blocks.js */ \"./blocks/color-blocks/color-blocks.js\");\n/* harmony import */ var _blocks_type_blocks_type_blocks_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../blocks/type-blocks/type-blocks.js */ \"./blocks/type-blocks/type-blocks.js\");\n/* harmony import */ var _blocks_logo_logo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../blocks/logo/logo.js */ \"./blocks/logo/logo.js\");\n/* harmony import */ var _colors_and_type_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./colors-and-type.scss */ \"./pages/UI kit/colors-and-type/colors-and-type.scss\");\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task1/./pages/UI_kit/colors-and-type/colors-and-type.js?");
 
 /***/ })
 
