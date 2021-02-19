@@ -1,0 +1,24 @@
+@import "../../fonts/fonts-templates.scss";
+
+.range-slider-container {
+  display: grid;
+  grid-template-rows: 39px auto;
+  grid-template-columns: 164px auto;
+  max-width: 266px
+}
+
+.range-slider-container__title {
+  @extend %textstyle-h3;
+  line-height: 19px;
+}
+.range-slider-container__value {
+  @extend %textstyle-body;
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 19px;
+  font-size: 12px;
+  text-align: right;
+}
+.range-slider-container__slider {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}

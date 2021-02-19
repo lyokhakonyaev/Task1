@@ -48,11 +48,11 @@
   margin-bottom: 0.46rem;
 }
 .form-elements__radio-buttons-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 118px 110px;
 }
 .form-elements__radio-buttons-title {
   @extend %textstyle-h3;
   line-height: 19px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
