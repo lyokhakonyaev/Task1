@@ -56,3 +56,12 @@
   line-height: 19px;
   margin-bottom: 14px;
 }
+.form-elements__toggle-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-elements__toggle-title{
+  @extend %textstyle-h3;
+  line-height: 19px;
+  margin-bottom: 15px;
+}
