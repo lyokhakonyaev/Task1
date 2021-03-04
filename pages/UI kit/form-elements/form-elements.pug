@@ -33,25 +33,25 @@ html
             .form-elements__check-box-title checkbox buttons
             .form-elements__check-box-container
               +check-box('checkbox', 'Можно курить')
-              +check-box('checkbox','Можно с питомцами')
-              +check-box('checkbox','Можно пригласить гостей (до 10 человек)')
+              +check-box('checkbox','Можно с питомцами', 'checked')
+              +check-box('checkbox','Можно пригласить гостей (до 10 человек)', 'checked')
           .form-elements__radio-buttons
             include ../../../blocks/radio-buttons/radio-buttons.pug
             .form-elements__radio-buttons-title radio buttons
             .form-elements__radio-buttons-container
-              +radio-buttons('radio', 'sex', 'male', 'Мужчина')
+              +radio-buttons('radio', 'sex', 'male', 'Мужчина', 'checked')
               +radio-buttons('radio', 'sex', 'female', 'Женщина')
           .form-elements__range-slider
-              include ../../../blocks/range-slider/range-slider.pug
+            include ../../../blocks/range-slider/range-slider.pug
           .form-elements__toggle
             include ../../../blocks/toggle/toggle.pug
             .form-elements__toggle-title toggle
             .form-elements__toggle-container
+              +toggle('checkbox', 'Получать спецпредложения', 'checked')
               +toggle('checkbox', 'Получать спецпредложения')
-              +toggle('checkbox', 'Получать спецпредложения')
-             
-
-
+          .form-elements__rate-buttons
+            .form-elements__rate-buttons-title rate button
+            include ../../../blocks/rate-buttons/rate-buttons.pug
 
 
       .form-elements__middle-container

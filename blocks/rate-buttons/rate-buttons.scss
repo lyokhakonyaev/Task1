@@ -1,0 +1,65 @@
+$unchecked-star: "\2606";
+$unchecked-color: #bc9cff;
+$checked-star: "\2605";
+$checked-color: #bc9cff;
+
+.rate-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 24px;
+}
+.star-cb-group + .star-cb-group {
+  padding-right: 60px;
+}
+.star-cb-group {
+  font-size: 0;
+  * {
+    font-size: 2rem;
+  }
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  box-sizing: border-box;
+  line-height: 24px;
+  & > input {
+    display: none;
+    & + label {
+      display: inline-block;
+      overflow: hidden;
+      text-indent: 9999px;
+      width: 24px;
+      height: 24px;
+      white-space: nowrap;
+      cursor: pointer;
+      &:before {
+        display: inline-block;
+        text-indent: -9999px;
+        content: $unchecked-star;
+        color: $unchecked-color;
+      }
+    }
+    &:checked ~ label:before,
+    & + label:hover ~ label:before,
+    & + label:hover:before {
+      content: $checked-star;
+    }
+  }
+  & > .star-cb-clear + label {
+    text-indent: -9999px;
+    width: 0.5em;
+    margin-left: -0.5em;
+  }
+  & > .star-cb-clear + label:before {
+    width: 0.5em;
+  }
+
+  &:hover > input + label:before {
+    content: $unchecked-star;
+    color: $unchecked-color;
+  }
+  &:hover > input + label:hover ~ label:before,
+  &:hover > input + label:hover:before {
+    content: $checked-star;
+    color: $checked-color;
+  }
+}

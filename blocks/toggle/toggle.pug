@@ -1,6 +1,6 @@
-mixin toggle(type, text)
+mixin toggle(type, text, checked)
   .toggle
     label.toggle__label
-      input.toggle__input(type=type)
+      input.toggle__input(type=type, checked=checked)
       span.toggle__span
     .toggle__text=text

@@ -65,3 +65,8 @@
   line-height: 19px;
   margin-bottom: 15px;
 }
+.form-elements__rate-buttons-title {
+  @extend %textstyle-h3;
+  line-height: 19px;
+  margin-bottom: 15px;
+}

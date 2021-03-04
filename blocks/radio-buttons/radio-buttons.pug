@@ -1,5 +1,5 @@
-mixin radio-buttons(type, name, value, text)
+mixin radio-buttons(type, name, value, text, checked)
   .radio-buttons
     label.radio-buttons__label
-      input.radio-buttons__input(type=type, name=name, value=value)
+      input.radio-buttons__input(type=type, name=name, value=value, checked=checked)
       span.radio-buttons__span=text
