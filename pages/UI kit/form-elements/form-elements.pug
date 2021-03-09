@@ -9,49 +9,69 @@ html
         .form-elements__left-container
           .form-elements__text-field
             include ../../../blocks/text-field/text-field.pug
-            p.form-elements__text-field-title text field
-            p.form-elements__text-field-type default
+            .form-elements__title text field
+            .form-elements__text-field-type default
             +text-field('email', 'Email')(class="default")
+
           .form-elements__text-field
             include ../../../blocks/text-field/text-field.pug
-            p.form-elements__text-field-title text field
-            p.form-elements__text-field-type hover / focus
+            .form-elements__title text field
+            .form-elements__text-field-type hover / focus
             +text-field('text')(class="hover")
+
           .form-elements__text-field
             include ../../../blocks/text-field/text-field.pug
-            p.form-elements__text-field-title masked text field 
-            p.form-elements__text-field-type 
+            .form-elements__title masked text field 
+            .form-elements__text-field-type 
             +text-field('text', 'ДД.ММ.ГГГГ', '00.00.0000')(class="masked")
+
           .form-elements__text-field
             include ../../../blocks/text-field/text-field.pug
-            p.form-elements__text-field-title subscription text field
-            p.form-elements__text-field-type 
+            .form-elements__title subscription text field
+            .form-elements__text-field-type 
             +text-field('email', 'Email')(class="subscription")
             +text-field('image', '', '', 'files/arrow_forward.svg', '')(class="button")
+
           .form-elements__check-box
             include ../../../blocks/check-box/check-box.pug
-            .form-elements__check-box-title checkbox buttons
+            .form-elements__title checkbox buttons
             .form-elements__check-box-container
               +check-box('checkbox', 'Можно курить')
               +check-box('checkbox','Можно с питомцами', 'checked')
               +check-box('checkbox','Можно пригласить гостей (до 10 человек)', 'checked')
+
           .form-elements__radio-buttons
             include ../../../blocks/radio-buttons/radio-buttons.pug
-            .form-elements__radio-buttons-title radio buttons
+            .form-elements__title radio buttons
             .form-elements__radio-buttons-container
               +radio-buttons('radio', 'sex', 'male', 'Мужчина', 'checked')
               +radio-buttons('radio', 'sex', 'female', 'Женщина')
+
           .form-elements__range-slider
             include ../../../blocks/range-slider/range-slider.pug
+
           .form-elements__toggle
             include ../../../blocks/toggle/toggle.pug
-            .form-elements__toggle-title toggle
+            .form-elements__title toggle
             .form-elements__toggle-container
               +toggle('checkbox', 'Получать спецпредложения', 'checked')
               +toggle('checkbox', 'Получать спецпредложения')
+
           .form-elements__rate-buttons
-            .form-elements__rate-buttons-title rate button
-            include ../../../blocks/rate-buttons/rate-buttons.pug
+            .form-elements__title rate button
+            .form-elements__rate-buttons-container
+              .form-elements__rate-buttons-include
+                include ../../../blocks/rate-buttons/rate-buttons.pug
+              .form-elements__rate-buttons-include 
+                include ../../../blocks/rate-buttons/rate-buttons.pug
+
+          .form-elements__like-button
+            .form-elements__title like button
+            include ../../../blocks/like-button/like-button.pug
+            .form-elements__like-button-container
+              +like-button('2')
+              +like-button('12', 'checked')
+
 
 
       .form-elements__middle-container

@@ -3,15 +3,6 @@ $unchecked-color: #bc9cff;
 $checked-star: "\2605";
 $checked-color: #bc9cff;
 
-.rate-buttons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 24px;
-}
-.star-cb-group + .star-cb-group {
-  padding-right: 60px;
-}
 .star-cb-group {
   font-size: 0;
   * {

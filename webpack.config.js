@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -53,6 +54,11 @@ module.exports = {
         index: 'form-elements.html'
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            jquery: 'jquery'
+        }),
         new HTMLWebpackPlugin({
             template: PATHS.colorsandtype + '/colors-and-type.pug',
             filename: 'colors-and-type.html'

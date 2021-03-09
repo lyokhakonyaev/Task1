@@ -1,24 +1,11 @@
-.rate-buttons-container
-  .star-cb-group
+.star-cb-group
     mixin rate-buttons(type, id, name, checked)
       input(class!=attributes.class, type=type, id=id, name=name, checked=checked)
       label(for=id)
 
     +rate-buttons('radio', 'rating-5', 'rating')
     +rate-buttons('radio', 'rating-4', 'rating')
-    +rate-buttons('radio', 'rating-3', 'rating')
+    +rate-buttons('radio', 'rating-3', 'rating', 'checked')
     +rate-buttons('radio', 'rating-2', 'rating')
     +rate-buttons('radio', 'rating-1', 'rating')
     +rate-buttons('radio', 'rating-0', 'rating')(class="star-cb-clear")
-
-  .star-cb-group
-    mixin rate-buttons(type, id, name, value, checked)
-      input(class!=attributes.class, type=type, id=id, name=name, value=value, checked=checked)
-      label(for=id)
-
-    +rate-buttons('radio', 'rating-5', 'rating', 'checked')
-    +rate-buttons('radio', 'rating-4', 'rating', 'checked')
-    +rate-buttons('radio', 'rating-3', 'rating', 'checked')
-    +rate-buttons('radio', 'rating-2', 'rating', 'checked')
-    +rate-buttons('radio', 'rating-1', 'rating', 'checked')
-    +rate-buttons('radio', 'rating-0', 'rating', '0')(class="star-cb-clear")
