@@ -17,7 +17,7 @@ html
             include ../../../blocks/text-field/text-field.pug
             .form-elements__title text field
             .form-elements__text-field-type hover / focus
-            +text-field('text')(class="hover")
+            +text-field('text')(class="hovered")
 
           .form-elements__text-field
             include ../../../blocks/text-field/text-field.pug
@@ -59,11 +59,7 @@ html
 
           .form-elements__rate-buttons
             .form-elements__title rate button
-            .form-elements__rate-buttons-container
-              .form-elements__rate-buttons-include
-                include ../../../blocks/rate-buttons/rate-buttons.pug
-              .form-elements__rate-buttons-include 
-                include ../../../blocks/rate-buttons/rate-buttons.pug
+            include ../../../blocks/rate-buttons/rate-buttons.pug
 
           .form-elements__like-button
             .form-elements__title like button

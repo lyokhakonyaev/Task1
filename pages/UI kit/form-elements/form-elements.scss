@@ -64,15 +64,6 @@
 }
 
 //Rate Buttons
-.form-elements__rate-buttons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 24px;
-}
-.form-elements__rate-buttons-include + .form-elements__rate-buttons-include {
-  padding-right: 60px;
-}
 
 //Like Button
 .form-elements__like-button-container {
