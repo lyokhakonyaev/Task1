@@ -1,0 +1,12 @@
+@import "../../fonts/fonts-templates.scss";
+
+
+.bullet-list__container  {
+    @extend %textstyle-body;
+    margin-left: 17px;
+}
+
+li {
+    list-style-image: url("bullet-list-marker.svg");
+    margin-bottom: 5px;
+}

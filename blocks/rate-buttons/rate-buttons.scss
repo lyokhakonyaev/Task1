@@ -1,29 +1,40 @@
-.rate-buttons-container {
-  display: flex;
+.rate-buttons {
   width: 120px;
-  justify-content: center;
-  overflow: hidden;
+  height: 20px;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
-  height: 24px;
-  position: relative;
 }
-.rate-buttons-container > input {
-  display: none;
-}
-
-.rate-buttons-container > label {
+.rate-buttons__star {
   cursor: pointer;
-  width: 24px;
-  height: 24px;
-  margin-top: auto;
-  background-image: url("rate-buttons-star-border.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 76%;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  position: relative; 
+}
+.rate-buttons__star:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: url(rate-buttons-star-border.svg) no-repeat center;
+  background-size: cover;
+}
+.rate-buttons__star_active:before,
+.rate-buttons__star_active ~ .rate-buttons__star:before {
+  background: url(rate-buttons-star.svg) no-repeat center;
+  background-size: cover;
+}
+.rate-buttons:hover .rate-buttons__star:before {
+  background: url(rate-buttons-star-border.svg) no-repeat center;
+  background-size: cover;
   transition: 0.3s;
 }
-
-.rate-buttons-container > input:checked ~ label,
-.rate-buttons-container > input:checked ~ label ~ label {
-  background-image: url("rate-buttons-star.svg");
+.rate-buttons__star:hover ~ .rate-buttons__star:before,
+.rate-buttons:hover .rate-buttons__star:hover:before {
+  background: url(rate-buttons-star.svg) no-repeat center;
+  background-size: cover;
+  transition: 0.3s;
 }

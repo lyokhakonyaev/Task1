@@ -1,0 +1,18 @@
+mixin buttons (type, status)
+  if type === "filled-big-button"
+    if status ==="enabled"
+      button.buttons__big-button_filled(value="filled-big-button") click me 
+    if status ==="disabled"
+      button.buttons__big-button_filled(disabled, class!=attributes.class) click me 
+  if type === "unfilled-big-button"
+    if status ==="enabled"
+      button.buttons__big-button_unfilled(value="unfilled-big-button", class!=attributes.class) click me 
+    if status ==="disabled"
+      button.buttons__big-button_unfilled(disabled, class!=attributes.class) click me 
+  if type === "link-button"
+    if status === "enabled"
+      button.buttons__link-button(value="link-button") click me 
+    if status === "disabled"
+      button.buttons__link-button(disabled, class!=attributes.class) click me 
+  if type === "to-payment-button"
+      button.buttons__to-payment-button(value='to-payment-button') перейти к оплате

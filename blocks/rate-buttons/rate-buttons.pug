@@ -1,9 +1,8 @@
-mixin rate-buttons(id, name, checked)
-  input(type="radio", id=id, name=name, checked=checked)
-  label(for=id)
-.rate-buttons-container
-  +rate-buttons('rating-5', 'rating')
-  +rate-buttons('rating-4', 'rating', 'checked')
-  +rate-buttons('rating-3', 'rating')
-  +rate-buttons('rating-2', 'rating')
-  +rate-buttons('rating-1', 'rating')
+mixin rate-buttons(rate)
+  .rate-buttons
+    - for (var i = 5; i > 0; --i) {
+      if i===rate
+        .rate-buttons__star.rate-buttons__star_active
+      else
+        .rate-buttons__star
+    -}

@@ -64,11 +64,54 @@
 }
 
 //Rate Buttons
-
+.form-elements__rate-buttons-container {
+  display: grid;
+  grid-template-columns: 120px 140px;
+}
+.rate-buttons + .rate-buttons {
+  margin-left: 20px;
+}
 //Like Button
 .form-elements__like-button-container {
   display: inline-flex;
 }
 .like-button + .like-button {
   margin-left: 10px;
+}
+
+//Buttons
+
+.form-elements__buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elements__big-buttons-container {
+  display: grid;
+  grid-template-columns: 99px 118px;
+  grid-template-rows: 44px 72px;
+  margin-bottom: 33px;
+}
+.form-elements__filled-big-button_disabled {
+  margin-left: 20px;
+}
+.form-elements__unfilled-big-button_enabled {
+  margin-top: 30px;
+}
+.form-elements__unfilled-big-button_disabled {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.form-elements__link-buttons-container  {
+  margin-bottom: 30px;
+}
+.form-elements__disabled-link-button {
+  margin-left: 20px;
+}
+
+.form-elements__link-buttons-container {
+  display: grid;
+  grid-template-columns: 61px 81px;
+  grid-template-rows: 15px;
 }

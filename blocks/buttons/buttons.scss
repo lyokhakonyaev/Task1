@@ -1,0 +1,102 @@
+@import "../../fonts/fonts-templates.scss";
+
+button {
+  @extend %textstyle-h3;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.buttons__big-button_filled {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #ffffff;
+  
+}
+.buttons__big-button_filled:disabled {
+  opacity: 0.5;
+}
+.buttons__big-button_filled:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.buttons__big-button_filled:active {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+.buttons__big-button_unfilled {
+  width: 99px;
+  height: 44px;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0),
+   rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  color: #bc9cff;
+}
+.buttons__big-button_unfilled:disabled {
+  opacity: 0.5;
+}
+.buttons__big-button_unfilled:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.buttons__big-button_unfilled:active {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+.buttons__link-button {
+  width: 61px;
+  height: 15px;
+  border: none;
+  background: none;
+  color: #bc9cff;
+}
+.buttons__link-button:disabled {
+  color: rgba(31, 32, 65, 0.5);
+}
+.buttons__link-button:hover {
+  color: rgba(31, 32, 65, 0.5);
+  transition: 0.3s;
+}
+.buttons__link-button:active {
+  color: #bc9cff 75%;
+  transition: 0.15s;
+}
+
+
+
+
+.buttons__to-payment-button {
+  position: relative;
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+  color: #ffffff;
+}
+.buttons__to-payment-button:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.buttons__to-payment-button:active {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+.buttons__to-payment-button::after {
+  position: absolute;
+  content: '';
+  right: 10px;
+  top: 10px;
+  background: url(white-arrow-forward.svg) no-repeat center;
+  height: 25px;
+  width: 25px;
+}

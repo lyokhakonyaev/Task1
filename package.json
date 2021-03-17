@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^6.2.1",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "jquery-mask-plugin": "^1.14.16",
     "normalize.css": "^8.0.1",
     "nouislider": "^14.6.3",

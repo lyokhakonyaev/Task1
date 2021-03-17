@@ -60,6 +60,10 @@ html
           .form-elements__rate-buttons
             .form-elements__title rate button
             include ../../../blocks/rate-buttons/rate-buttons.pug
+            .form-elements__rate-buttons-container
+              +rate-buttons(4)
+              +rate-buttons(5)
+
 
           .form-elements__like-button
             .form-elements__title like button
@@ -68,7 +72,37 @@ html
               +like-button('2')
               +like-button('12', 'checked')
 
+          .form-elements__buttons
+            .form-elements__title buttons
+            include ../../../blocks/buttons/buttons.pug
+            .form-elements__buttons-container
+            .form-elements__big-buttons-container
+              +buttons('filled-big-button', 'enabled')
+              +buttons('filled-big-button', 'disabled')(class="form-elements__filled-big-button_disabled")
+              +buttons('unfilled-big-button', 'enabled')(class="form-elements__unfilled-big-button_enabled")
+              +buttons('unfilled-big-button', 'disabled')(class="form-elements__unfilled-big-button_disabled")
+            .form-elements__link-buttons-container  
+              +buttons('link-button', 'enabled')
+              +buttons('link-button', 'disabled')(class="form-elements__disabled-link-button")
+            +buttons('to-payment-button')
+
+          .form-elements__pagination
+            .form-elements__title pagination
+            include ../../../blocks/pagination-block/pagination-block.pug
+          .form-elements__bullet-list
+            .form-elements__title bullet list
+              include ../../../blocks/bullet-list/bullet-list.pug
+            +bullet-list('bullet-list', 'Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
 
 
-      .form-elements__middle-container
-      .form-elements__bottom-container
+
+
+
+
+
+
+
+
+
+  .form-elements__middle-container
+  .form-elements__bottom-container
