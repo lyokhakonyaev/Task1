@@ -1,3 +1,5 @@
+@import "../../mixins/mixins.scss";
+
 .rate-buttons {
   width: 120px;
   height: 20px;
@@ -10,7 +12,7 @@
   width: 20px;
   height: 20px;
   margin-right: 4px;
-  position: relative; 
+  position: relative;
 }
 .rate-buttons__star:before {
   position: absolute;
@@ -30,11 +32,11 @@
 .rate-buttons:hover .rate-buttons__star:before {
   background: url(rate-buttons-star-border.svg) no-repeat center;
   background-size: cover;
-  transition: 0.3s;
+  @include transition(none, 0.3s, linear, 0s);
 }
 .rate-buttons__star:hover ~ .rate-buttons__star:before,
 .rate-buttons:hover .rate-buttons__star:hover:before {
   background: url(rate-buttons-star.svg) no-repeat center;
   background-size: cover;
-  transition: 0.3s;
+  @include transition(none, 0.3s, linear, 0s);
 }

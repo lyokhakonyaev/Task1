@@ -1,4 +1,5 @@
 @import "../../fonts/fonts-templates.scss";
+@import "../../mixins/mixins.scss";
 
 .pagination {
   width: fit-content;
@@ -16,7 +17,7 @@
   margin: 0;
 }
 .pagination__container li {
-  border-radius: 50%;
+  @include border-radius(50%);
   list-style: none;
   text-align: center;
   @extend %textstyle-body;
@@ -52,7 +53,7 @@
   position: relative;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  @include border-radius(50%);
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
 
@@ -67,13 +68,11 @@
   background: url(pagination-arrow.svg) no-repeat center;
 }
 .pagination__container .prev:after {
-  transform: rotate(180deg);
+  @include transform(rotate(180deg));
 }
 .pagination__text {
   width: fit-content;
   @extend %textstyle-body;
   color: rgba(31, 32, 65, 0.75);
-  padding: 0;
-  margin: auto;
   margin-top: 10px;
 }

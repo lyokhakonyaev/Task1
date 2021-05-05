@@ -1,4 +1,5 @@
 @import "../../fonts/fonts-templates.scss";
+@import "../../mixins/mixins.scss";
 
 .toggle {
   display: flex;
@@ -17,7 +18,7 @@
   width: 40px;
   height: 20px;
   box-sizing: border-box;
-  border-radius: 10px;
+  @include border-radius(10px);
   padding-left: 3px;
   border: 1px solid rgba(31, 32, 65, 0.25);
 }
@@ -27,18 +28,16 @@
   flex-grow: 0;
   height: 12px;
   width: 12px;
-  border-radius: 50%;
+  @include border-radius(50%);
   background-color: rgba(31, 32, 65, 0.25);
-  transition: 0.4s;
+  @include transition(none, 0.4s, linear, 0s);
 }
 .toggle__label > input:checked + span {
   border: 1px solid #BC9CFF;
-  transition: 0.4s;
+  @include transition(none, 0.4s, linear, 0s);
 }
 .toggle__label > input:checked + span::before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
+  @include transform(translateX(20px));
   background-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 .toggle__text {

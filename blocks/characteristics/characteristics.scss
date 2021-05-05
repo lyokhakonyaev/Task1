@@ -1,0 +1,36 @@
+@import "../../fonts/fonts-templates.scss";
+
+
+.characteristics__container {
+    display: grid;
+    grid-template-columns: 55px 320px;
+    grid-template-rows: 20px 20px;
+}
+
+.characteristics__title {
+  @extend %textstyle-h3;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: none;
+  font-size: 14px;
+}
+
+.characteristics__text {
+  @extend %textstyle-body;
+  grid-column-start: 2;
+}
+
+.characteristics__emote-logo {
+  height: 40px;
+  width: 40px;
+  background: url(characteristics-emote.svg) no-repeat center;
+}
+.characteristics__house-logo {
+  height: 40px;
+  width: 40px;
+  background: url(characteristics-house.svg) no-repeat center;
+}
+.characteristics__whatshot-logo {
+  height: 40px;
+  width: 40px;
+  background: url(characteristics-whatshot.svg) no-repeat center;
+}

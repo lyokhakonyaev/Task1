@@ -1,6 +1,8 @@
+@import "../../mixins/mixins.scss";
+
 .logo-border {
   border: 2.6px solid rgba(31, 32, 65, 0.25);
-  border-radius: 51%;
+  @include border-radius(51%);
   position: relative;
   height: 41px;
   width: 41px;

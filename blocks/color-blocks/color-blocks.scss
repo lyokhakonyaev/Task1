@@ -1,4 +1,5 @@
 @import "../../fonts/fonts-templates.scss";
+@import "../../mixins/mixins.scss";
 
 .color-blocks {
   display: flex;
@@ -9,7 +10,7 @@
   box-sizing: border-box;
   height: 70px;
   width: 70px;
-  border-radius: 6px;
+  @include border-radius(6px);
 }
 
 .DarkShadeS100 {
@@ -35,12 +36,12 @@
 }
 
 .color-blocks__text {
-    margin-left: 40px;
-    margin-top: 11px;
+  margin-left: 40px;
+  margin-top: 11px;
 }
 .color-blocks__name {
-    @extend %textstyle-h2;
-    margin-bottom: 3px;
+  @extend %textstyle-h2;
+  margin-bottom: 3px;
 }
 .color-blocks__code {
   @extend %textstyle-h2;

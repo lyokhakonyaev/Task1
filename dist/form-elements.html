@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="null">
+    <meta name="viewport" content="width=device-width">
+  <link href="colorsandtype.css" rel="stylesheet"><link href="formelements.css" rel="stylesheet"></head>
+  <body>
+    <div class="form-elements">
+      <div class="form-elements__top-container">
+        <div class="form-elements__left-container">
+          <div class="form-elements__text-field">
+            <div class="form-elements__title">text field</div>
+            <div class="form-elements__text-field-type">default</div>
+                        <div class="text-field">
+                          <input class="text-field__input default" type="email" placeholder="Email">
+                        </div>
+          </div>
+          <div class="form-elements__text-field">
+            <div class="form-elements__title">text field</div>
+            <div class="form-elements__text-field-type">hover / focus</div>
+                        <div class="text-field">
+                          <input class="text-field__input hovered" type="text">
+                        </div>
+          </div>
+          <div class="form-elements__text-field">
+            <div class="form-elements__title">masked text field </div>
+            <div class="form-elements__text-field-type"> </div>
+                        <div class="text-field">
+                          <input class="text-field__input masked" type="text" placeholder="ДД.ММ.ГГГГ" data-mask="00.00.0000">
+                        </div>
+          </div>
+          <div class="form-elements__text-field">
+            <div class="form-elements__title">subscription text field</div>
+            <div class="form-elements__text-field-type"> </div>
+                        <div class="text-field">
+                          <input class="text-field__input subscription" type="email" placeholder="Email">
+                        </div>
+                        <div class="text-field">
+                          <input class="text-field__input button" type="image" placeholder="" data-mask="" src="files/arrow_forward.svg" value="">
+                        </div>
+          </div>
+          <div class="form-elements__check-box">
+            <div class="form-elements__title">checkbox buttons</div>
+            <div class="form-elements__check-box-container">
+                          <div class="check-box">
+                            <label class="check-box__label">
+                              <input class="check-box__input" type="checkbox"><span class="check-box__span">Можно курить</span>
+                            </label>
+                          </div>
+                          <div class="check-box">
+                            <label class="check-box__label">
+                              <input class="check-box__input" type="checkbox" checked="checked"><span class="check-box__span">Можно с питомцами</span>
+                            </label>
+                          </div>
+                          <div class="check-box">
+                            <label class="check-box__label">
+                              <input class="check-box__input" type="checkbox" checked="checked"><span class="check-box__span">Можно пригласить гостей (до 10 человек)</span>
+                            </label>
+                          </div>
+            </div>
+          </div>
+          <div class="form-elements__radio-buttons">
+            <div class="form-elements__title">radio buttons</div>
+            <div class="form-elements__radio-buttons-container">
+                          <div class="radio-buttons">
+                            <label class="radio-buttons__label">
+                              <input class="radio-buttons__input" type="radio" name="sex" value="male" checked="checked"><span class="radio-buttons__span">Мужчина</span>
+                            </label>
+                          </div>
+                          <div class="radio-buttons">
+                            <label class="radio-buttons__label">
+                              <input class="radio-buttons__input" type="radio" name="sex" value="female"><span class="radio-buttons__span">Женщина</span>
+                            </label>
+                          </div>
+            </div>
+          </div>
+          <div class="form-elements__range-slider">
+<div class="range-slider-container">
+  <div class="range-slider-container__title">range slider</div>
+  <div class="range-slider-container__value" id="value-id"></div>
+  <div class="range-slider-container__slider" id="slider-id"></div>
+</div>
+          </div>
+          <div class="form-elements__toggle">
+            <div class="form-elements__title">toggle</div>
+            <div class="form-elements__toggle-container">
+                          <div class="toggle">
+                            <label class="toggle__label">
+                              <input class="toggle__input" type="checkbox" checked="checked"><span class="toggle__span"></span>
+                            </label>
+                            <div class="toggle__text">Получать спецпредложения</div>
+                          </div>
+                          <div class="toggle">
+                            <label class="toggle__label">
+                              <input class="toggle__input" type="checkbox"><span class="toggle__span"></span>
+                            </label>
+                            <div class="toggle__text">Получать спецпредложения</div>
+                          </div>
+            </div>
+          </div>
+          <div class="form-elements__rate-buttons">
+            <div class="form-elements__title">rate button</div>
+            <div class="form-elements__rate-buttons-container">
+                          <div class="rate-buttons">
+                            <div class="rate-buttons__star"></div>
+                            <div class="rate-buttons__star rate-buttons__star_active"></div>
+                            <div class="rate-buttons__star"></div>
+                            <div class="rate-buttons__star"></div>
+                            <div class="rate-buttons__star"></div>
+                          </div>
+                          <div class="rate-buttons">
+                            <div class="rate-buttons__star rate-buttons__star_active"></div>
+                            <div class="rate-buttons__star"></div>
+                            <div class="rate-buttons__star"></div>
+                            <div class="rate-buttons__star"></div>
+                            <div class="rate-buttons__star"></div>
+                          </div>
+            </div>
+          </div>
+          <div class="form-elements__like-button">
+            <div class="form-elements__title">like button</div>
+            <div class="form-elements__like-button-container">
+                          <div class="like-button">2</div>
+                          <div class="like-button like-button__active">12</div>
+            </div>
+          </div>
+          <div class="form-elements__buttons">
+            <div class="form-elements__title">buttons</div>
+            <div class="form-elements__buttons-container"></div>
+            <div class="form-elements__big-buttons-container">
+                          <button class="buttons__big-button_filled" value="filled-big-button">click me </button>
+                          <button class="buttons__big-button_filled form-elements__filled-big-button_disabled" disabled>click me </button>
+                          <button class="buttons__big-button_unfilled form-elements__unfilled-big-button_enabled" value="unfilled-big-button">click me </button>
+                          <button class="buttons__big-button_unfilled form-elements__unfilled-big-button_disabled" disabled>click me </button>
+            </div>
+            <div class="form-elements__link-buttons-container"> 
+                          <button class="buttons__link-button" value="link-button">click me </button>
+                          <button class="buttons__link-button form-elements__disabled-link-button" disabled>click me </button>
+            </div>
+                        <button class="buttons__to-payment-button" value="to-payment-button">перейти к оплате</button>
+          </div>
+          <div class="form-elements__pagination">
+            <div class="form-elements__title">pagination</div>
+<div class="pagination">
+  <div class="pagination__container"></div>
+  <div class="pagination__text"></div>
+</div>
+          </div>
+          <div class="form-elements__bullet-list">
+            <div class="form-elements__title">bullet list
+            </div>
+                          <ul class="bullet-list__container" id="bullet-list">
+                            <li>Нельзя с питомцами</li>
+                            <li>Без вечеринок и мероприятий</li>
+                            <li>Время прибытия — после 13:00, а выезд до 12:00</li>
+                          </ul>
+          </div>
+          <div class="form-elements__characteristics">
+<div class="characteristics">
+  <div class="characteristics__container">
+    <div class="characteristics__emote-logo"></div>
+    <div class="characteristics__title">Комфорт</div>
+    <div class="characteristics__text">Шумопоглощающие стены</div>
+    <div class="characteristics__line"></div>
+  </div>
+  <div class="characteristics__container">
+    <div class="characteristics__house-logo"></div>
+    <div class="characteristics__title">Удобство</div>
+    <div class="characteristics__text">Окно в каждой из спален</div>
+    <div class="characteristics__line"></div>
+  </div>
+  <div class="characteristics__container">
+    <div class="characteristics__whatshot-logo"></div>
+    <div class="characteristics__title">Уют</div>
+    <div class="characteristics__text">Номер оснащён камином</div>
+    <div class="characteristics__line"></div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="colorsandtype.js"></script><script src="vendors-node_modules_jquery-mask-plugin_dist_jquery_mask_min_js-node_modules_nouislider_distr-c8ec57.js"></script><script src="formelements.js"></script></body>
+  <div class="form-elements__middle-container"></div>
+  <div class="form-elements__bottom-container"></div>
+</html>

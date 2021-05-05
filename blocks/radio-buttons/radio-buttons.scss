@@ -1,4 +1,5 @@
 @import "../../fonts/fonts-templates.scss";
+@import "../../mixins/mixins.scss";
 
 .radio-buttons__span {
   @extend %textstyle-body;
@@ -28,10 +29,10 @@
   background-size: 12px 12px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  border-radius: 10px;
+  @include border-radius(10px);
 }
 
 .radio-buttons__label > input:checked + span::before {
   border: 1px solid #bc9cff;
-  background-image: url('radio-circle.svg');
+  background-image: url("radio-circle.svg");
 }
